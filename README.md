@@ -1,17 +1,28 @@
 # color_image
 
-A Flutter app that loads an image from an API and applies its extracted background color for a smooth dynamic display.
+A Flutter app that fetches an image from an API and adapts the UI using the extracted background color for a smooth and dynamic visual effect.
 
-## Getting Started
+Features
+🎨 Extracts background color from the image
+🖼 Displays API-loaded image
+⚡ Smooth transitions & dynamic UI
+🌗 Light/Dark theme toggle
+📶 Handles offline & error states
 
-This project is a starting point for a Flutter application.
+Getting Started
+flutter pub get
+flutter run
 
-A few resources to get you started if this is your first Flutter project:
+Tech Stack
+Flutter • Dart
+GetX state management
+image (pixel processing)
+cached_network_image
+connectivity_plus
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+Folder Structure
+lib/
+ ├── controller/       # ImageController
+ ├── view/             # ImageScreen
+ ├── api/              # API helper
+ └── model/            # ImageResponseModel
